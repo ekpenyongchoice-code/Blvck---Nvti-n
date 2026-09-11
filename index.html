@@ -1,367 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Professional Services | Quality You Can Trust</title>
+<title>BLVCK NVTIΔN | Where Royalty Redefines Reality</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        html {
-            scroll-behavior: smooth;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #1f2937;
-            background: #ffffff;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 18px 20px;
-        }
+body{
+    font-family:Arial, sans-serif;
+    background:#050505;
+    color:#f5f5f5;
+    line-height:1.7;
+}
 
-        nav {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#050505;
+    border-bottom:1px solid #c58b19;
+    padding:18px 20px;
+}
 
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
+nav{
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 22px;
-        }
+.logo{
+    color:#d99a20;
+    font-size:25px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
 
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding: 60px 20px;
-            background: #f3f4f6;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        .hero-content {
-            max-width: 800px;
-            margin: auto;
-        }
+nav a:hover{
+    color:#d99a20;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #111827;
-        }
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    padding:70px 20px;
+    background:
+    radial-gradient(circle at center,#352400 0%,#090909 45%,#000 100%);
+}
 
-        .hero p {
-            font-size: 19px;
-            margin-bottom: 30px;
-            color: #4b5563;
-        }
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
 
-        .button {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 14px 26px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.crown{
+    font-size:55px;
+    color:#ffb51b;
+    margin-bottom:20px;
+}
 
-        .button:hover {
-            background: #1d4ed8;
-        }
+.hero h1{
+    color:#d99a20;
+    font-size:58px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
 
-        section {
-            padding: 70px 20px;
-        }
+.hero h2{
+    font-size:25px;
+    color:#fff;
+    margin-bottom:20px;
+}
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-        }
+.hero p{
+    color:#d6d6d6;
+    font-size:19px;
+    margin-bottom:35px;
+}
 
-        .title {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 40px;
-            color: #111827;
-        }
+.button{
+    display:inline-block;
+    background:#d99a20;
+    color:#050505;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:7px;
+}
 
-        .about {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
+.button:hover{
+    background:#ffbd28;
+}
 
-        .services {
-            background: #f9fafb;
-        }
+section{
+    padding:80px 20px;
+}
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
+.container{
+    max-width:1100px;
+    margin:auto;
+}
 
-        .service {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
+.title{
+    text-align:center;
+    color:#d99a20;
+    font-size:38px;
+    margin-bottom:45px;
+}
 
-        .service h3 {
-            margin-bottom: 15px;
-            color: #111827;
-        }
+.intro{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:19px;
+    color:#ddd;
+}
 
-        .why-us {
-            text-align: center;
-        }
+.gold-box{
+    background:linear-gradient(135deg,#2b1b00,#120d03);
+    border:1px solid #c58b19;
+    border-radius:18px;
+    padding:35px;
+    margin-top:30px;
+}
 
-        .contact {
-            background: #111827;
-            color: white;
-            text-align: center;
-        }
+.gold-box h3{
+    color:#ffb51b;
+    margin-bottom:15px;
+}
 
-        .contact .title {
-            color: white;
-        }
+.services{
+    background:#090909;
+}
 
-        footer {
-            background: #030712;
-            color: white;
-            text-align: center;
-            padding: 22px;
-        }
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
 
-        @media (max-width: 700px) {
+.service{
+    background:#111;
+    border:1px solid #8f6412;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
 
-            nav ul {
-                display: none;
-            }
+.service:hover{
+    transform:translateY(-5px);
+    border-color:#ffb51b;
+}
 
-            .hero h1 {
-                font-size: 36px;
-            }
+.service-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
 
-            .service-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+.service h3{
+    color:#ffb51b;
+    margin-bottom:12px;
+}
+
+.service p{
+    color:#ccc;
+}
+
+.phase{
+    margin-bottom:45px;
+}
+
+.phase-number{
+    color:#ffb51b;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.phase h3{
+    color:#d99a20;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.phase p{
+    color:#ddd;
+}
+
+.leader{
+    text-align:center;
+}
+
+.leader-card{
+    max-width:800px;
+    margin:auto;
+    padding:40px;
+    border:1px solid #c58b19;
+    border-radius:25px;
+    background:#101010;
+}
+
+.leader-card h3{
+    color:#ffb51b;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.quote{
+    color:#d99a20;
+    font-style:italic;
+    font-size:20px;
+    margin-top:25px;
+}
+
+.contact{
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.95));
+    border-top:1px solid #c58b19;
+}
+
+.contact p{
+    color:#ddd;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.contact-info{
+    margin:30px auto;
+    max-width:600px;
+}
+
+.contact-info a{
+    display:block;
+    color:#ffb51b;
+    font-size:20px;
+    text-decoration:none;
+    margin:12px;
+}
+
+footer{
+    background:#000;
+    border-top:1px solid #5e420d;
+    text-align:center;
+    padding:30px 20px;
+    color:#aaa;
+}
+
+footer strong{
+    color:#d99a20;
+}
+
+@media(max-width:700px){
+
+    nav ul{
+        display:none;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .title{
+        font-size:31px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:60px 18px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    <nav>
 
-        <div class="logo">
-            YOUR BUSINESS
-        </div>
+<nav>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<div class="logo">
+BLVCK NVTIΔN
+</div>
 
-    </nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#entertainment">Entertainment</a></li>
+<li><a href="#lifestyle">Lifestyle</a></li>
+<li><a href="#fashion">Fashion</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
 </header>
 
 
 <section class="hero" id="home">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <h1>
-            Professional Services You Can Trust
-        </h1>
+<div class="crown">♛</div>
 
-        <p>
-            We provide reliable, professional and
-            high-quality services designed to help
-            our clients achieve their goals.
-        </p>
+<h1>BLVCK NVTIΔN</h1>
 
-        <a href="#contact" class="button">
-            Get Started
-        </a>
+<h2>Where Royalty Redefines Reality</h2>
 
-    </div>
+<p>
+Entertainment • Leisure • Lifestyle • Fashion
+</p>
+
+<p>
+A visionary African lifestyle brand creating experiences
+through entertainment, fashion, creativity, learning and leisure.
+</p>
+
+<a href="#about" class="button">
+Discover Our Vision
+</a>
+
+<a href="#contact" class="button">
+Contact Us
+</a>
+
+</div>
 
 </section>
 
 
 <section id="about">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="title">
-            About Our Company
-        </h2>
+<h2 class="title">
+Our Brand
+</h2>
 
-        <div class="about">
+<div class="intro">
 
-            <p>
-                We are a professional service company
-                committed to delivering quality solutions
-                and excellent customer service.
-            </p>
+<p>
+<strong>BLVCK NVTIΔN</strong> is a brand that spreads its
+tentacles through the world of entertainment, leisure and lifestyle.
+</p>
 
-            <br>
+<br>
 
-            <p>
-                Our focus is simple: understand our
-                clients' needs, provide reliable solutions,
-                and deliver results they can be proud of.
-            </p>
+<p>
+Following the trend of time and as evolution takes place,
+BLVCK NVTIΔN is dedicated to fulfilling the lifestyle needs
+and entertainment desires of our global community.
+</p>
 
-        </div>
+<br>
 
-    </div>
+<p>
+BLVCK NVTIΔN serves as a mother brand to other sub-brands,
+creating a community of music lovers, fashionistas,
+creators and lifestyle enthusiasts.
+</p>
 
-</section>
+</div>
 
+<div class="gold-box">
 
-<section class="services" id="services">
+<h3>Our Vision</h3>
 
-    <div class="container">
+<p>
+To become Africa's premier destination for integrated
+lifestyle and live entertainment.
+</p>
 
-        <h2 class="title">
-            Our Services
-        </h2>
+</div>
 
-        <div class="service-grid">
+<div class="gold-box">
 
-            <div class="service">
-                <h3>Professional Service</h3>
+<h3>Our Mission</h3>
 
-                <p>
-                    High-quality professional solutions
-                    tailored to your specific needs.
-                </p>
-            </div>
+<p>
+To change the phase of entertainment in Nigeria,
+promote and encourage live music, foster united sound
+and synchronized synergy between live bands and other
+forms of entertainment, build a home of leisure,
+create a fashionable lifestyle, develop educational
+opportunities and build a formidable security system.
+</p>
 
+</div>
 
-            <div class="service">
-                <h3>Consultation</h3>
-
-                <p>
-                    Expert guidance to help you make
-                    better decisions and achieve your goals.
-                </p>
-            </div>
-
-
-            <div class="service">
-                <h3>Business Solutions</h3>
-
-                <p>
-                    Practical solutions designed to improve
-                    your business and deliver results.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<section class="why-us">
+<section class="services" id="entertainment">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="title">
-            Why Choose Us?
-        </h2>
+<h2 class="title">
+Entertainment
+</h2>
 
-        <p>
-            ✓ Professional and reliable service
-        </p>
+<div class="service-grid">
 
-        <p>
-            ✓ Quality-focused approach
-        </p>
+<div class="service">
 
-        <p>
-            ✓ Customer satisfaction
-        </p>
+<div class="service-icon">🎵</div>
 
-        <p>
-            ✓ Affordable solutions
-        </p>
+<h3>Music</h3>
 
-        <p>
-            ✓ Dedicated support
-        </p>
+<p>
+Promoting music, artists and live entertainment while
+creating opportunities for musicians and creatives.
+</p>
 
-    </div>
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">🎤</div>
+
+<h3>Events & Concerts</h3>
+
+<p>
+Mind-blowing events, concerts, tours and experiences
+designed to connect people through entertainment.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">🎬</div>
+
+<h3>Film & Media</h3>
+
+<p>
+Creating films, talk shows, reality shows,
+documentaries and other engaging forms of media.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="lifestyle">
+
+<div class="container">
+
+<h2 class="title">
+The Leisure Plan
+</h2>
+
+<div class="phase">
+
+<div class="phase-number">01</div>
+
+<h3>A Home of Comfort</h3>
+
+<p>
+BLVCK NVTIΔN intends to structure a leisure home
+of comfort and satisfaction where people can relax,
+connect and enjoy exceptional experiences.
+</p>
+
+</div>
+
+
+<div class="phase">
+
+<div class="phase-number">02</div>
+
+<h3>Beauty & Wellness</h3>
+
+<p>
+The brand envisions a complete spa experience,
+unisex beauty salon, skincare treatment and other
+specialized wellness services.
+</p>
+
+</div>
+
+
+<div class="phase">
+
+<div class="phase-number">03</div>
+
+<h3>Fitness & Recreation</h3>
+
+<p>
+A fitness environment designed to promote physical
+wellness while also supporting mental wellbeing and
+relaxation.
+</p>
+
+</div>
+
+
+<div class="phase">
+
+<div class="phase-number">04</div>
+
+<h3>Art & Experiences</h3>
+
+<p>
+Creating spaces and experiences around body art,
+piercing, creativity, relaxation and lifestyle culture.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="services" id="fashion">
+
+<div class="container">
+
+<h2 class="title">
+The Fashion Empire
+</h2>
+
+<div class="intro">
+
+<p>
+BLVCK NVTIΔN has an interest in building a fashion
+empire consisting of different sections.
+</p>
+
+<br>
+
+<p>
+As a fashion-promoting brand, we aim to develop
+branded clothing, accessories and other fashion products
+while creating opportunities for models and fashion creatives.
+</p>
+
+</div>
+
+<div class="service-grid" style="margin-top:40px;">
+
+<div class="service">
+
+<div class="service-icon">👑</div>
+
+<h3>Branded Clothing</h3>
+
+<p>
+Unique BLVCK NVTIΔN fashion and clothing collections.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">💎</div>
+
+<h3>Accessories</h3>
+
+<p>
+Fashion accessories created to complement the BLVCK NVTIΔN identity.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">📸</div>
+
+<h3>Modeling</h3>
+
+<p>
+Building opportunities and experiences for models
+within the fashion community.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+The Schole
+</h2>
+
+<div class="gold-box">
+
+<h3>
+Learn, Unlearn and Relearn
+</h3>
+
+<p>
+Learning is one of the core principles of BLVCK NVTIΔN.
+The brand seeks to provide an atmosphere for learning,
+practice and invention.
+</p>
+
+<br>
+
+<p>
+Our areas of interest include music, fashion,
+textile and branding, content creation, art and visuals.
+</p>
+
+<br>
+
+<p>
+The goal is to create opportunities for training,
+practical experience, legal certifications and a
+global community of creators.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="leader">
+
+<div class="container">
+
+<h2 class="title">
+Leadership
+</h2>
+
+<div class="leader-card">
+
+<h3>
+The Vision Behind BLVCK NVTIΔN
+</h3>
+
+<p>
+BLVCK NVTIΔN is an initiative built around a powerful
+vision of entertainment, lifestyle, fashion and creativity.
+</p>
+
+<br>
+
+<p>
+The brand is driven by imagination, reality and the desire
+to build a community of good entertainment lovers,
+lifestyle enthusiasts and fashionable people.
+</p>
+
+<div class="quote">
+"If you can think it, then you can build it."
+</div>
+
+<div class="quote">
+"Reality is the result of our imagination."
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 <section class="contact" id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="title">
-            Ready to Work With Us?
-        </h2>
+<h2 class="title">
+Connect With BLVCK NVTIΔN
+</h2>
 
-        <p>
-            Contact us today and let's discuss
-            how we can help you.
-        </p>
+<p>
+Ready to collaborate, partner, work with us or learn more
+about the BLVCK NVTIΔN vision?
+</p>
 
-        <br>
+<div class="contact-info">
 
-        <a href="mailto:your@email.com" class="button">
-            Contact Us
-        </a>
+<a href="tel:07080373990">
+📞 0708 037 3990
+</a>
 
-    </div>
+<a href="https://wa.me/2347080373990">
+💬 WhatsApp Us
+</a>
+
+<a href="mailto:blvcknvtion69@gmail.com">
+✉️ blvcknvtion69@gmail.com
+</a>
+
+</div>
+
+<a href="https://wa.me/2347080373990" class="button">
+Chat With Us on WhatsApp
+</a>
+
+</div>
 
 </section>
 
 
 <footer>
 
-    <p>
-        © 2026 YOUR BUSINESS. All rights reserved.
-    </p>
+<p>
+<strong>BLVCK NVTIΔN</strong>
+</p>
+
+<p>
+Where Royalty Redefines Reality
+</p>
+
+<p>
+Entertainment • Leisure • Lifestyle • Fashion
+</p>
+
+<br>
+
+<p>
+© 2026 BLVCK NVTIΔN. All Rights Reserved.
+</p>
 
 </footer>
 
 </body>
-</html>
+    </html>
