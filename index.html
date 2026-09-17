@@ -2,1243 +2,455 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-content="BLVCK NVTI∆N — Where Royalty Redefines Reality. A luxury African lifestyle and entertainment house spanning music, film, content creation, fashion, leisure and culture.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BLVCK NVTI∆N — Where Royalty Redefines Reality. A luxury African lifestyle, fashion and entertainment house spanning music, film, content creation, events, leisure and culture.">
 <meta name="theme-color" content="#050505">
-
 <title>BLVCK NVTI∆N | Where Royalty Redefines Reality</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* =========================================================
-   BLVCK NVTI∆N — LUXURY CREATIVE HOUSE
-   ========================================================= */
-
 :root{
-    --black:#030303;
-    --black-soft:#080808;
-    --black-light:#111111;
-
-    --gold:#d4af37;
-    --gold-light:#f5d77a;
-    --gold-deep:#9b7419;
-
-    --white:#f8f5ed;
-    --cream:#e9e0cc;
-
-    --muted:#a7a29a;
-
-    --border:rgba(212,175,55,.22);
-    --border-strong:rgba(212,175,55,.5);
-
-    --serif:'Cormorant Garamond',serif;
-    --sans:'Montserrat',sans-serif;
+  --black:#030303; --soft:#080808; --panel:#101010;
+  --gold:#d4af37; --gold2:#f5d77a; --deep:#9b7419;
+  --white:#f8f5ed; --cream:#e9e0cc; --muted:#aaa49b;
+  --line:rgba(212,175,55,.22); --line2:rgba(212,175,55,.5);
+  --serif:"Cormorant Garamond",serif; --sans:"Montserrat",sans-serif;
 }
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-html{
-    background:var(--black);
-}
-
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+html{background:var(--black)}
 body{
-    background:
-        radial-gradient(circle at 50% 10%,rgba(212,175,55,.07),transparent 28%),
-        var(--black);
-
-    color:var(--white);
-    font-family:var(--sans);
-    line-height:1.7;
-    overflow-x:hidden;
+  background:
+    radial-gradient(circle at 50% 0,rgba(212,175,55,.08),transparent 28%),
+    var(--black);
+  color:var(--white);font-family:var(--sans);line-height:1.7;overflow-x:hidden
 }
-
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    opacity:.18;
-
-    background-image:
-        linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
-
-    background-size:70px 70px;
-    z-index:-2;
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;z-index:-1;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:70px 70px
 }
-
-a{
-    color:inherit;
-    text-decoration:none;
-}
-
-button{
-    font-family:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-.container{
-    width:min(1180px,90%);
-    margin:auto;
-}
-
-/* =========================================================
-   GOLD TEXT
-   ========================================================= */
-
-.gold{
-    color:var(--gold);
-}
-
+a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+.container{width:min(1180px,90%);margin:auto}
+.gold{color:var(--gold)}
 .gold-gradient{
-    background:linear-gradient(
-        120deg,
-        var(--gold-deep),
-        var(--gold-light),
-        var(--gold),
-        var(--gold-deep)
-    );
-
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+  background:linear-gradient(120deg,var(--deep),var(--gold2),var(--gold),var(--deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent
 }
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-
-    background:rgba(3,3,3,.88);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--border);
-}
-
-.nav{
-    width:min(1250px,92%);
-    height:88px;
-    margin:auto;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-}
-
-.brand img{
-    width:175px;
-    height:62px;
-    object-fit:contain;
-    object-position:center;
-    filter:drop-shadow(0 0 10px rgba(212,175,55,.12));
-}
-
-/* desktop navigation */
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:30px;
-}
-
-.nav-links a{
-    position:relative;
-
-    font-size:11px;
-    font-weight:500;
-    letter-spacing:3px;
-    color:#d8d3ca;
-
-    transition:.3s ease;
-}
-
-.nav-links a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-9px;
-    width:0;
-    height:1px;
-    background:var(--gold);
-
-    transition:.3s ease;
-}
-
-.nav-links a:hover{
-    color:var(--gold);
-}
-
-.nav-links a:hover::after{
-    width:100%;
-}
-
-/* menu */
-
-.menu-toggle{
-    display:none;
-
-    width:46px;
-    height:46px;
-
-    background:transparent;
-    border:1px solid var(--border);
-
-    cursor:pointer;
-
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    gap:5px;
-}
-
-.menu-toggle span{
-    width:20px;
-    height:1px;
-    background:var(--gold);
-    transition:.3s;
-}
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero{
-    min-height:100vh;
-    padding-top:88px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    position:relative;
-    overflow:hidden;
-
-    text-align:center;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-
-    width:850px;
-    height:850px;
-
-    border:1px solid rgba(212,175,55,.12);
-    border-radius:50%;
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%,-45%);
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-
-    width:1100px;
-    height:1100px;
-
-    border:1px solid rgba(212,175,55,.07);
-    border-radius:50%;
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%,-45%);
-}
-
-.hero-inner{
-    width:min(900px,90%);
-    position:relative;
-    z-index:2;
-
-    animation:heroReveal 1.4s ease forwards;
-}
-
-@keyframes heroReveal{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.hero-logo{
-    width:min(670px,92%);
-    margin:0 auto 45px;
-
-    filter:
-        drop-shadow(0 0 25px rgba(212,175,55,.13))
-        drop-shadow(0 20px 45px rgba(0,0,0,.8));
-}
-
-.hero-kicker{
-    font-size:11px;
-    letter-spacing:6px;
-    color:#bcb7ae;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-family:var(--serif);
-    font-size:clamp(42px,7vw,82px);
-    font-weight:500;
-    line-height:1;
-
-    margin-bottom:22px;
-}
-
-.hero h1 span{
-    color:var(--gold);
-}
-
-.hero-tagline{
-    font-family:var(--serif);
-    font-style:italic;
-
-    font-size:clamp(22px,3vw,34px);
-
-    color:var(--gold-light);
-
-    margin-bottom:25px;
-}
-
-.hero-categories{
-    font-size:10px;
-    letter-spacing:4px;
-    color:#aaa49b;
-
-    margin-bottom:40px;
-}
-
-.hero-categories span{
-    color:var(--gold);
-    margin:0 7px;
-}
-
+section{padding:110px 0;position:relative}
+.section-label{font-size:9px;letter-spacing:5px;color:var(--gold);margin-bottom:16px}
+.section-title{font:500 clamp(42px,6vw,72px)/1 var(--serif);margin-bottom:22px}
+.section-title span{color:var(--gold)}
+.section-intro{max-width:700px;color:var(--muted);font-size:14px;line-height:2;margin-bottom:48px}
+.gold-divider{width:80px;height:1px;background:var(--gold);margin:28px 0}
 .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    min-width:205px;
-    padding:17px 28px;
-
-    border:1px solid var(--gold);
-
-    color:var(--gold-light);
-
-    font-size:10px;
-    font-weight:600;
-    letter-spacing:3px;
-
-    background:rgba(212,175,55,.025);
-
-    transition:.35s ease;
-}
-
-.btn:hover{
-    background:var(--gold);
-    color:#050505;
-
-    box-shadow:
-        0 0 30px rgba(212,175,55,.2);
-}
-
-.scroll-note{
-    margin-top:60px;
-
-    font-size:9px;
-    letter-spacing:4px;
-    color:#77716a;
-}
-
-.scroll-line{
-    width:1px;
-    height:45px;
-
-    background:linear-gradient(
-        var(--gold),
-        transparent
-    );
-
-    margin:12px auto 0;
-}
-
-/* =========================================================
-   SECTION STRUCTURE
-   ========================================================= */
-
-section{
-    position:relative;
-    padding:120px 0;
-}
-
-.section-label{
-    font-size:9px;
-    letter-spacing:5px;
-    color:var(--gold);
-
-    margin-bottom:17px;
-}
-
-.section-title{
-    font-family:var(--serif);
-
-    font-size:clamp(40px,6vw,70px);
-    line-height:1.05;
-
-    font-weight:500;
-
-    margin-bottom:25px;
-}
-
-.section-title span{
-    color:var(--gold);
-}
-
-.section-intro{
-    max-width:680px;
-
-    color:#a9a49b;
-
-    font-size:14px;
-    line-height:2;
-
-    margin-bottom:55px;
-}
-
-/* =========================================================
-   GOLD DIVIDER
-   ========================================================= */
-
-.gold-divider{
-    width:80px;
-    height:1px;
-
-    background:var(--gold);
-
-    margin:30px 0;
-}
-
-.gold-divider.center{
-    margin:30px auto;
-}
-
-/* =========================================================
-   ABOUT
-   ========================================================= */
-
-.about{
-    background:
-        linear-gradient(
-            180deg,
-            transparent,
-            rgba(212,175,55,.025),
-            transparent
-        );
-}
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:80px;
-
-    align-items:center;
-}
-
-.about-copy p{
-    color:#aaa49b;
-    font-size:14px;
-    line-height:2;
-    margin-bottom:22px;
-}
-
-.about-mark{
-    min-height:450px;
-
-    border:1px solid var(--border);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    position:relative;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(212,175,55,.08),
-            transparent 60%
-        );
-}
-
-.about-mark::before{
-    content:"";
-
-    position:absolute;
-    inset:25px;
-
-    border:1px solid rgba(212,175,55,.12);
-}
-
-.about-mark img{
-    width:75%;
-    position:relative;
-    z-index:2;
-}
-
-/* =========================================================
-   THE WORLD
-   ========================================================= */
-
-.world{
-    background:var(--black-soft);
-}
-
-.world-header{
-    text-align:center;
-    max-width:780px;
-    margin:auto;
-}
-
-.world-header .section-intro{
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.world-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-.world-card{
-    min-height:350px;
-
-    padding:45px;
-
-    border:1px solid var(--border);
-
-    position:relative;
-    overflow:hidden;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(212,175,55,.035),
-            rgba(255,255,255,.01)
-        );
-
-    transition:.45s ease;
-}
-
-.world-card::before{
-    content:"";
-
-    position:absolute;
-
-    width:200px;
-    height:200px;
-
-    border:1px solid rgba(212,175,55,.09);
-    border-radius:50%;
-
-    right:-70px;
-    bottom:-70px;
-
-    transition:.45s ease;
-}
-
-.world-card:hover{
-    transform:translateY(-7px);
-    border-color:var(--border-strong);
-
-    box-shadow:
-        0 25px 70px rgba(0,0,0,.35);
-}
-
-.world-card:hover::before{
-    transform:scale(1.3);
-}
-
-.card-number{
-    font-family:var(--serif);
-    font-size:18px;
-    color:var(--gold);
-
-    margin-bottom:25px;
-}
-
-.world-card h3{
-    font-family:var(--serif);
-    font-size:38px;
-    font-weight:500;
-
-    margin-bottom:15px;
-}
-
-.world-card p{
-    color:#99938a;
-    font-size:13px;
-    line-height:1.9;
-
-    max-width:500px;
-}
-
-.card-link{
-    display:inline-block;
-
-    margin-top:28px;
-
-    color:var(--gold);
-
-    font-size:9px;
-    letter-spacing:3px;
-}
-
-/* =========================================================
-   ENTERTAINMENT
-   ========================================================= */
-
-.entertainment{
-    background:#050505;
-}
-
-.entertainment-intro{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-
-    gap:80px;
-
-    align-items:end;
-
-    margin-bottom:55px;
-}
-
-.entertainment-intro p{
-    color:#9c968d;
-    font-size:14px;
-    line-height:2;
-}
-
-.entertainment-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:1px;
-
-    background:var(--border);
-}
-
-.ent-card{
-    min-height:330px;
-
-    padding:42px 32px;
-
-    background:#050505;
-
-    position:relative;
-
-    transition:.35s ease;
-}
-
-.ent-card:hover{
-    background:#0d0d0d;
-}
-
-.ent-icon{
-    width:55px;
-    height:55px;
-
-    border:1px solid var(--gold);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:var(--gold);
-
-    font-family:var(--serif);
-    font-size:22px;
-
-    margin-bottom:32px;
-}
-
-.ent-card h3{
-    font-family:var(--serif);
-    font-size:32px;
-    font-weight:500;
-
-    margin-bottom:14px;
-}
-
-.ent-card p{
-    color:#918c84;
-    font-size:12px;
-    line-height:1.9;
-}
-
-/* =========================================================
-   MUSIC FEATURE
-   ========================================================= */
-
-.music-feature{
-    margin-top:70px;
-
-    border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
-
-    padding:55px 0;
-}
-
-.music-grid{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:70px;
-
-    align-items:center;
-}
-
-.music-feature h3{
-    font-family:var(--serif);
-    font-size:48px;
-    font-weight:500;
-}
-
-.music-feature p{
-    color:#9c968d;
-    font-size:13px;
-    line-height:2;
-
-    margin:20px 0 28px;
-}
-
-.music-note{
-    text-transform:uppercase;
-
-    font-size:9px;
-    letter-spacing:4px;
-    color:var(--gold);
-}
-
-.sound-box{
-    min-height:240px;
-
-    border:1px solid var(--border);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    position:relative;
-}
-
-.sound-box::before{
-    content:"";
-
-    position:absolute;
-
-    width:150px;
-    height:150px;
-
-    border:1px solid rgba(212,175,55,.25);
-    border-radius:50%;
-}
-
-.sound-symbol{
-    font-family:var(--serif);
-    color:var(--gold);
-
-    font-size:60px;
-
-    position:relative;
-}
-
-/* =========================================================
-   FILM
-   ========================================================= */
-
-.film{
-    background:
-        radial-gradient(
-            circle at 80% 50%,
-            rgba(212,175,55,.06),
-            transparent 35%
-        ),
-        var(--black-soft);
-}
-
-.film-layout{
-    display:grid;
-    grid-template-columns:.8fr 1.2fr;
-    gap:80px;
-
-    align-items:center;
-}
-
-.film-frame{
-    aspect-ratio:4/5;
-
-    border:1px solid var(--border);
-
-    padding:15px;
-
-    position:relative;
-}
-
-.film-inner{
-    width:100%;
-    height:100%;
-
-    border:1px solid rgba(212,175,55,.16);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(212,175,55,.08),
-            transparent 65%
-        );
-}
-
-.film-inner span{
-    font-family:var(--serif);
-    font-size:55px;
-    color:var(--gold);
-}
-
-.film-copy p{
-    color:#9d978e;
-    font-size:14px;
-    line-height:2;
-    margin-bottom:20px;
-}
-
-/* =========================================================
-   CONTENT CREATION
-   ========================================================= */
-
-.content-studio{
-    background:#040404;
-}
-
-.studio-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.studio-card{
-    padding:40px 30px;
-
-    min-height:280px;
-
-    border:1px solid var(--border);
-
-    background:
-        linear-gradient(
-            160deg,
-            rgba(212,175,55,.025),
-            transparent
-        );
-}
-
-.studio-card h3{
-    font-family:var(--serif);
-    font-size:30px;
-    font-weight:500;
-
-    margin:20px 0 12px;
-}
-
-.studio-card p{
-    color:#918b83;
-    font-size:12px;
-    line-height:1.9;
-}
-
-/* =========================================================
-   FASHION
-   ========================================================= */
-
-.fashion{
-    background:var(--black-soft);
-}
-
-.fashion-header{
-    text-align:center;
-    max-width:800px;
-    margin:auto auto 60px;
-}
-
-.fashion-header .section-intro{
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.fashion-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.fashion-card{
-    min-height:300px;
-
-    padding:28px 22px;
-
-    border:1px solid var(--border);
-
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-
-    position:relative;
-    overflow:hidden;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(212,175,55,.015),
-            rgba(0,0,0,.8)
-        );
-
-    transition:.4s;
-}
-
-.fashion-card:hover{
-    transform:translateY(-8px);
-    border-color:var(--gold);
-}
-
-.fashion-card::before{
-    content:"";
-
-    position:absolute;
-
-    top:25px;
-    right:25px;
-
-    width:70px;
-    height:70px;
-
-    border:1px solid rgba(212,175,55,.13);
-    border-radius:50%;
-}
-
-.fashion-card h3{
-    font-family:var(--serif);
-    font-size:28px;
-    font-weight:500;
-
-    position:relative;
-}
-
-.fashion-card p{
-    color:#8f8981;
-    font-size:11px;
-
-    position:relative;
-}
-
-/* =========================================================
-   LIFESTYLE
-   ========================================================= */
-
-.lifestyle{
-    padding-bottom:80px;
-}
-
-.lifestyle-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-
-    border-top:1px solid var(--border);
-    border-left:1px solid var(--border);
-}
-
-.life-item{
-    padding:55px 40px;
-
-    border-right:1px solid var(--border);
-    border-bottom:1px solid var(--border);
-}
-
-.life-item h3{
-    font-family:var(--serif);
-    font-size:34px;
-    font-weight:500;
-
-    margin-bottom:15px;
-}
-
-.life-item p{
-    color:#969087;
-    font-size:12px;
-    line-height:1.9;
-}
-
-/* =========================================================
-   EVENTS
-   ========================================================= */
-
-.events{
-    background:#050505;
-}
-
-.event-banner{
-    border:1px solid var(--border);
-
-    padding:70px 45px;
-
-    text-align:center;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(212,175,55,.08),
-            transparent 60%
-        );
-}
-
-.event-banner h3{
-    font-family:var(--serif);
-    font-size:clamp(38px,6vw,65px);
-    font-weight:500;
-}
-
-.event-banner p{
-    max-width:650px;
-    margin:20px auto 30px;
-
-    color:#9c968d;
-    font-size:13px;
-}
-
-/* =========================================================
-   SCHOLÉ
-   ========================================================= */
-
-.schole{
-    background:
-        linear-gradient(
-            180deg,
-            var(--black-soft),
-            var(--black)
-        );
-}
-
-.schole-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
-
-    align-items:center;
-}
-
-.schole-copy p{
-    color:#9c968d;
-    font-size:13px;
-    line-height:2;
-}
-
-.schole-box{
-    padding:50px;
-
-    border:1px solid var(--border);
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(212,175,55,.08),
-            transparent 70%
-        );
-}
-
-.schole-box h3{
-    font-family:var(--serif);
-    font-size:42px;
-    font-weight:500;
-
-    margin-bottom:15px;
-}
-
-/* =========================================================
-   VISION
-   ========================================================= */
-
-.vision{
-    text-align:center;
-
-    padding:150px 0;
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(212,175,55,.09),
-            transparent 45%
-        ),
-        var(--black);
-}
-
-.vision-content{
-    width:min(900px,90%);
-    margin:auto;
-}
-
-.vision h2{
-    font-family:var(--serif);
-    font-size:clamp(44px,7vw,85px);
-
-    line-height:1.05;
-
-    font-weight:500;
-}
-
-.vision p{
-    color:#a29c93;
-
-    max-width:650px;
-    margin:30px auto;
-
-    font-size:14px;
-    line-height:2;
-}
-
-/* =========================================================
-   QUOTE
-   ========================================================= */
-
-.quote{
-    padding:100px 0;
-
-    border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
-
-    text-align:center;
-}
-
-.quote-mark{
-    font-family:var(--serif);
-    font-size:70px;
-    color:var(--gold);
-
-    line-height:.5;
-}
-
-.quote p{
-    width:min(850px,90%);
-    margin:35px auto;
-
-    font-family:var(--serif);
-    font-size:clamp(28px,4vw,45px);
-
-    font-style:italic;
-
-    color:#e7dfcf;
-}
-
-.quote small{
-    font-size:9px;
-    letter-spacing:4px;
-    color:var(--gold);
-}
-
-/* =========================================================
-   LEADERSHIP
-   ========================================================= */
-
-.leadership{
-    background:var(--black-soft);
-}
-
-.leadership-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-
-    gap:70px;
-
-    align-items:center;
-}
-
-.leadership-copy p{
-    color:#9c968d;
-    font-size:13px;
-    line-height:2;
-    margin-bottom:20px;
-}
-
-.leadership-card{
-    min-height:420px;
-
-    border:1px solid var(--border);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    position:relative;
-}
-
-.leadership-card::before{
-    content:"";
-
-    position:absolute;
-    inset:25px;
-
-    border:1px solid rgba(212,175,55,.12);
-}
-
-.leadership-card h3{
-    font-family:var(--serif);
-    font-size:60px;
-    font-weight:500;
-
-    position:relative;
-}
-
-.leadership-card span{
-    display:block;
-
-    font-family:var(
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:205px;padding:16px 26px;border:1px solid var(--gold);
+  color:var(--gold2);font-size:10px;font-weight:600;letter-spacing:3px;
+  transition:.3s;background:rgba(212,175,55,.025)
+}
+.btn:hover{background:var(--gold);color:#050505;box-shadow:0 0 30px rgba(212,175,55,.18)}
+
+/* HEADER */
+header{position:fixed;inset:0 0 auto;z-index:1000;background:rgba(3,3,3,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:82px;width:min(1250px,92%);margin:auto;display:flex;align-items:center;justify-content:space-between}
+.brand img{width:165px;height:58px;object-fit:contain}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:10px;letter-spacing:2.5px;color:#d8d3ca;transition:.3s}
+.nav-links a:hover{color:var(--gold)}
+.menu-check{display:none}
+.menu-button{display:none;border:1px solid var(--line);width:44px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}
+.menu-button span{display:block;width:19px;height:1px;background:var(--gold)}
+.mobile-menu{display:none}
+
+/* HERO */
+.hero{min-height:100vh;padding-top:82px;display:flex;align-items:center;text-align:center;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(212,175,55,.1);border-radius:50%;left:50%;top:53%;transform:translate(-50%,-50%)}
+.hero:before{width:min(850px,110vw);height:min(850px,110vw)}
+.hero:after{width:min(1100px,140vw);height:min(1100px,140vw);border-color:rgba(212,175,55,.055)}
+.hero-inner{width:min(900px,92%);margin:auto;position:relative;z-index:2;animation:rise 1.2s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+.hero-logo{width:min(560px,88%);margin:0 auto 30px;filter:drop-shadow(0 0 25px rgba(212,175,55,.13))}
+.hero-kicker{font-size:10px;letter-spacing:5px;color:#bbb5ab;margin-bottom:16px}
+.hero h1{font:500 clamp(44px,7vw,82px)/.95 var(--serif);margin-bottom:18px}
+.hero-tagline{font:italic clamp(22px,3vw,34px)/1.2 var(--serif);color:var(--gold2);margin-bottom:22px}
+.hero-categories{font-size:9px;letter-spacing:3px;color:#aaa49b;margin-bottom:34px}
+.hero-categories span{color:var(--gold);margin:0 5px}
+.scroll-note{margin-top:50px;font-size:8px;letter-spacing:4px;color:#777}
+.scroll-line{height:40px;width:1px;background:linear-gradient(var(--gold),transparent);margin:10px auto 0}
+
+/* ABOUT */
+.about{background:linear-gradient(180deg,transparent,rgba(212,175,55,.025),transparent)}
+.about-grid,.two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about-copy p,.copy p{color:var(--muted);font-size:14px;line-height:2;margin-bottom:20px}
+.about-mark{min-height:430px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle,rgba(212,175,55,.08),transparent 60%)}
+.about-mark:before{content:"";position:absolute;inset:24px;border:1px solid rgba(212,175,55,.12)}
+.about-mark img{width:74%;position:relative;z-index:2}
+
+/* WORLD */
+.world,.fashion,.schole,.leadership{background:var(--soft)}
+.world-header,.fashion-header{text-align:center;max-width:800px;margin:0 auto 55px}
+.world-header .section-intro,.fashion-header .section-intro{margin-left:auto;margin-right:auto}
+.world-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{
+  min-height:300px;padding:40px;border:1px solid var(--line);position:relative;
+  background:linear-gradient(145deg,rgba(212,175,55,.035),rgba(255,255,255,.008));
+  transition:.35s
+}
+.card:hover{transform:translateY(-5px);border-color:var(--line2)}
+.card-number{font:18px var(--serif);color:var(--gold);margin-bottom:22px}
+.card h3{font:500 36px var(--serif);margin-bottom:12px}
+.card p{color:#969087;font-size:12px;line-height:1.9}
+.card-link{display:inline-block;margin-top:24px;color:var(--gold);font-size:9px;letter-spacing:3px}
+
+/* ENTERTAINMENT */
+.entertainment{background:#050505}
+.ent-intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:50px}
+.ent-intro p{color:var(--muted);font-size:14px;line-height:2}
+.ent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.ent-card{min-height:300px;padding:38px 30px;background:#050505}
+.ent-icon{width:54px;height:54px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font:24px var(--serif);margin-bottom:26px}
+.ent-card h3{font:500 31px var(--serif);margin-bottom:12px}
+.ent-card p{color:#918c84;font-size:12px;line-height:1.9}
+.music-feature{margin-top:65px;border-block:1px solid var(--line);padding:50px 0}
+.music-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.music-feature h3{font:500 48px var(--serif)}
+.music-feature p{color:var(--muted);font-size:13px;line-height:2;margin:18px 0 25px}
+.sound-box{min-height:230px;border:1px solid var(--line);display:grid;place-items:center;position:relative}
+.sound-box:before{content:"";position:absolute;width:145px;height:145px;border:1px solid rgba(212,175,55,.25);border-radius:50%}
+.sound-symbol{position:relative;color:var(--gold);font:60px var(--serif)}
+
+/* FILM & CONTENT */
+.film{background:radial-gradient(circle at 80% 50%,rgba(212,175,55,.06),transparent 35%),var(--soft)}
+.film-frame{aspect-ratio:4/5;border:1px solid var(--line);padding:14px}
+.film-inner{width:100%;height:100%;border:1px solid rgba(212,175,55,.16);display:grid;place-items:center;text-align:center;background:radial-gradient(circle,rgba(212,175,55,.08),transparent 65%)}
+.film-inner span{font:55px var(--serif);color:var(--gold)}
+.studio{background:#040404}
+.studio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.studio-card{min-height:260px;padding:35px 28px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(212,175,55,.025),transparent)}
+.studio-card h3{font:500 30px var(--serif);margin:18px 0 10px}
+.studio-card p{color:#918b83;font-size:12px;line-height:1.9}
+
+/* FASHION & LIFESTYLE */
+.fashion-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fashion-card{min-height:280px;padding:25px 20px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(212,175,55,.015),rgba(0,0,0,.8));transition:.35s}
+.fashion-card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.fashion-card h3{font:500 27px var(--serif)}
+.fashion-card p{color:#8f8981;font-size:11px}
+.lifestyle{padding-bottom:80px}
+.life-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.life-item{padding:48px 35px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.life-item h3{font:500 32px var(--serif);margin-bottom:12px}
+.life-item p{color:#969087;font-size:12px;line-height:1.9}
+
+/* EVENTS */
+.events{background:#050505}
+.event-banner{border:1px solid var(--line);padding:65px 35px;text-align:center;background:radial-gradient(circle,rgba(212,175,55,.08),transparent 60%)}
+.event-banner h3{font:500 clamp(40px,6vw,68px) var(--serif)}
+.event-banner p{max-width:650px;margin:18px auto 28px;color:var(--muted);font-size:13px}
+
+/* SCHOLE / VISION / LEADERSHIP */
+.schole-grid,.leadership-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.schole-box{padding:48px;border:1px solid var(--line);background:radial-gradient(circle,rgba(212,175,55,.08),transparent 70%)}
+.schole-box h3{font:500 42px var(--serif);margin-bottom:12px}
+.vision{text-align:center;padding:140px 0;background:radial-gradient(circle,rgba(212,175,55,.09),transparent 45%),var(--black)}
+.vision-content{width:min(900px,90%);margin:auto}
+.vision h2{font:500 clamp(44px,7vw,85px)/1.05 var(--serif)}
+.vision p{max-width:650px;margin:28px auto;color:#a29c93;font-size:14px;line-height:2}
+.quote{padding:95px 0;border-block:1px solid var(--line);text-align:center}
+.quote-mark{font:70px/1 var(--serif);color:var(--gold)}
+.quote p{width:min(850px,90%);margin:30px auto;font:italic clamp(28px,4vw,45px)/1.25 var(--serif);color:#e7dfcf}
+.quote small{font-size:9px;letter-spacing:4px;color:var(--gold)}
+.leadership-card{min-height:400px;border:1px solid var(--line);display:grid;place-items:center;text-align:center;position:relative}
+.leadership-card:before{content:"";position:absolute;inset:24px;border:1px solid rgba(212,175,55,.12)}
+.leadership-card h3{position:relative;font:500 60px var(--serif)}
+
+/* CONTACT / FOOTER */
+.contact{text-align:center;background:#050505}
+.contact-box{max-width:900px;margin:auto;border:1px solid var(--line);padding:65px 30px;background:radial-gradient(circle,rgba(212,175,55,.07),transparent 65%)}
+.contact-box h2{font:500 clamp(42px,6vw,70px) var(--serif)}
+.contact-box p{max-width:620px;margin:18px auto 28px;color:var(--muted);font-size:13px}
+.contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:28px}
+footer{padding:45px 0;border-top:1px solid var(--line);text-align:center;background:#020202}
+footer img{width:180px;margin:0 auto 20px}
+footer p{color:#777;font-size:9px;letter-spacing:2px}
+.footer-contact{margin-top:15px;color:var(--gold);font-size:10px;letter-spacing:1px}
+
+/* MOBILE */
+@media(max-width:900px){
+  .nav-links{display:none}
+  .menu-button{display:flex}
+  .menu-check:checked + .menu-button + .mobile-menu{display:flex}
+  .mobile-menu{
+    position:fixed;top:82px;left:0;right:0;bottom:0;
+    background:rgba(3,3,3,.98);flex-direction:column;align-items:center;
+    justify-content:center;gap:24px;z-index:999
+  }
+  .mobile-menu a{font:500 22px var(--serif);letter-spacing:2px;color:var(--cream)}
+  .about-grid,.two-col,.schole-grid,.leadership-grid,.music-grid{grid-template-columns:1fr;gap:40px}
+  .ent-intro{grid-template-columns:1fr;gap:20px}
+  .ent-grid,.studio-grid{grid-template-columns:1fr 1fr}
+  .fashion-grid{grid-template-columns:1fr 1fr}
+  .world-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  section{padding:82px 0}
+  .nav{height:72px}.brand img{width:145px;height:52px}
+  .mobile-menu{top:72px}
+  .hero{padding-top:72px}
+  .hero-logo{width:86%;margin-bottom:24px}
+  .hero-categories{line-height:2}
+  .world-grid,.ent-grid,.studio-grid,.fashion-grid,.life-grid{grid-template-columns:1fr}
+  .card{min-height:260px;padding:30px}
+  .ent-card{min-height:250px}
+  .about-mark{min-height:330px}
+  .sound-box{min-height:200px}
+  .event-banner{padding:50px 20px}
+  .contact-box{padding:50px 20px}
+  .contact-links .btn{width:100%}
+  .leadership-card{min-height:300px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#home" aria-label="BLVCK NVTI∆N home">
+      <img src="./file_000000007a448210b04cd83df34b0b4a%20(1).png" alt="BLVCK NVTI∆N">
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">ABOUT</a>
+      <a href="#world">WORLD</a>
+      <a href="#entertainment">ENTERTAINMENT</a>
+      <a href="#fashion">FASHION</a>
+      <a href="#lifestyle">LIFESTYLE</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <input class="menu-check" id="menu-check" type="checkbox" aria-label="Open menu">
+    <label class="menu-button" for="menu-check"><span></span><span></span><span></span></label>
+
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about" onclick="document.getElementById('menu-check').checked=false">ABOUT</a>
+      <a href="#world" onclick="document.getElementById('menu-check').checked=false">WORLD</a>
+      <a href="#entertainment" onclick="document.getElementById('menu-check').checked=false">ENTERTAINMENT</a>
+      <a href="#fashion" onclick="document.getElementById('menu-check').checked=false">FASHION</a>
+      <a href="#lifestyle" onclick="document.getElementById('menu-check').checked=false">LIFESTYLE</a>
+      <a href="#contact" onclick="document.getElementById('menu-check').checked=false">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+
+<section class="hero">
+  <div class="hero-inner">
+    <img class="hero-logo" src="./file_000000007a448210b04cd83df34b0b4a%20(1).png" alt="BLVCK NVTI∆N — Where Royalty Redefines Reality">
+    <div class="hero-kicker">A LUXURY AFRICAN CREATIVE HOUSE</div>
+    <h1>Where <span>Royalty</span><br>Redefines Reality</h1>
+    <div class="hero-tagline">Culture. Creativity. Presence.</div>
+    <div class="hero-categories">ENTERTAINMENT <span>•</span> LEISURE <span>•</span> LIFESTYLE <span>•</span> FASHION</div>
+    <a class="btn" href="#world">DISCOVER OUR WORLD</a>
+    <div class="scroll-note">SCROLL TO EXPLORE</div>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <div class="section-label">01 — THE HOUSE</div>
+      <h2 class="section-title">Built from <span>Culture.</span><br>Made for Impact.</h2>
+      <div class="gold-divider"></div>
+      <p>BLVCK NVTI∆N is a contemporary African lifestyle and entertainment house built around creative expression, refined experiences and a distinctly royal point of view.</p>
+      <p>We bring music, film, content creation, fashion, leisure and culture into one connected world — creating experiences that feel premium, authentic and unforgettable.</p>
+    </div>
+    <div class="about-mark">
+      <img src="./file_000000007a448210b04cd83df34b0b4a%20(1).png" alt="BLVCK NVTI∆N logo">
+    </div>
+  </div>
+</section>
+
+<section id="world" class="world">
+  <div class="container">
+    <div class="world-header">
+      <div class="section-label">02 — OUR WORLD</div>
+      <h2 class="section-title">One House.<br><span>Many Realities.</span></h2>
+      <p class="section-intro">A connected ecosystem where African creativity meets modern luxury.</p>
+    </div>
+    <div class="world-grid">
+      <article class="card"><div class="card-number">01</div><h3>Entertainment</h3><p>Music, film, media, content and live experiences designed to move culture forward.</p><a class="card-link" href="#entertainment">ENTER THE WORLD →</a></article>
+      <article class="card"><div class="card-number">02</div><h3>Fashion</h3><p>Clothing, accessories, image and modeling shaped by a confident African luxury aesthetic.</p><a class="card-link" href="#fashion">EXPLORE FASHION →</a></article>
+      <article class="card"><div class="card-number">03</div><h3>Leisure</h3><p>Spaces and experiences built around comfort, beauty, wellness, recreation and elevated living.</p><a class="card-link" href="#lifestyle">DISCOVER LEISURE →</a></article>
+      <article class="card"><div class="card-number">04</div><h3>Culture</h3><p>Ideas, stories and creative collaborations that celebrate identity while speaking to the world.</p><a class="card-link" href="#vision">OUR VISION →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="entertainment" class="entertainment">
+  <div class="container">
+    <div class="ent-intro">
+      <div><div class="section-label">03 — ENTERTAINMENT</div><h2 class="section-title">We create<br><span>moments.</span></h2></div>
+      <p>From sound and screen to live stages and digital culture, BLVCK NVTI∆N develops entertainment experiences with African character and international ambition.</p>
+    </div>
+
+    <div class="ent-grid">
+      <article class="ent-card"><div class="ent-icon">♪</div><h3>Music</h3><p>Artist development, music projects, creative direction, releases, visual identity and experiences built around sound.</p></article>
+      <article class="ent-card"><div class="ent-icon">▣</div><h3>Film & Media</h3><p>Stories for film, visual media and branded entertainment — from concepts and production to screen.</p></article>
+      <article class="ent-card"><div class="ent-icon">✦</div><h3>Events & Concerts</h3><p>Curated events, performances, cultural gatherings and premium entertainment experiences.</p></article>
+    </div>
+
+    <div class="music-feature">
+      <div class="music-grid">
+        <div>
+          <div class="section-label">THE SOUND OF THE HOUSE</div>
+          <h3>Music with a <span class="gold">point of view.</span></h3>
+          <p>We see music as more than sound. It is identity, movement, fashion, storytelling and community.</p>
+          <a class="btn" href="https://wa.me/2347080373990">WORK WITH US</a>
+        </div>
+        <div class="sound-box"><div class="sound-symbol">♪</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="film">
+  <div class="container two-col">
+    <div class="film-frame"><div class="film-inner"><span>FILM<br>&amp;<br>MEDIA</span></div></div>
+    <div class="copy">
+      <div class="section-label">04 — FILM & MEDIA</div>
+      <h2 class="section-title">Stories that<br><span>stay with you.</span></h2>
+      <div class="gold-divider"></div>
+      <p>We develop visual stories, short films, branded content, documentaries, music visuals and creative media that give ideas a powerful screen presence.</p>
+      <a class="btn" href="mailto:blvcknvtion69@gmail.com">START A PROJECT</a>
+    </div>
+  </div>
+</section>
+
+<section class="studio">
+  <div class="container">
+    <div class="section-label">05 — CONTENT CREATION</div>
+    <h2 class="section-title">The <span>Creative Studio.</span></h2>
+    <p class="section-intro">A creative engine for brands, artists, personalities and cultural projects.</p>
+    <div class="studio-grid">
+      <article class="studio-card"><div class="card-number">01</div><h3>Brand Content</h3><p>Campaign concepts, social content, storytelling and creative direction with a premium visual language.</p></article>
+      <article class="studio-card"><div class="card-number">02</div><h3>Visual Direction</h3><p>Creative concepts, photography direction, styling, production design and visual identity.</p></article>
+      <article class="studio-card"><div class="card-number">03</div><h3>Digital Culture</h3><p>Content formats and experiences designed for the way modern African audiences discover culture.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="fashion" class="fashion">
+  <div class="container">
+    <div class="fashion-header">
+      <div class="section-label">06 — FASHION</div>
+      <h2 class="section-title">Wear the <span>reality.</span></h2>
+      <p class="section-intro">Fashion is one of the ways BLVCK NVTI∆N turns identity into presence.</p>
+    </div>
+    <div class="fashion-grid">
+      <article class="fashion-card"><h3>Branded Clothing</h3><p>Signature pieces and elevated everyday essentials.</p></article>
+      <article class="fashion-card"><h3>Accessories</h3><p>Details that complete the BLVCK NVTI∆N expression.</p></article>
+      <article class="fashion-card"><h3>Modeling</h3><p>Faces, presence and talent aligned with the house aesthetic.</p></article>
+      <article class="fashion-card"><h3>Creative Direction</h3><p>Campaigns and imagery built around strong visual identity.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="lifestyle" class="lifestyle">
+  <div class="container">
+    <div class="section-label">07 — LEISURE & LIFESTYLE</div>
+    <h2 class="section-title">Live <span>beautifully.</span></h2>
+    <p class="section-intro">A broader lifestyle philosophy rooted in comfort, confidence, wellness and refined experiences.</p>
+    <div class="life-grid">
+      <article class="life-item"><h3>Home of Comfort</h3><p>Spaces, hospitality and experiences designed to make luxury feel effortless.</p></article>
+      <article class="life-item"><h3>Beauty & Wellness</h3><p>Self-expression, grooming, wellness and personal care within a modern luxury culture.</p></article>
+      <article class="life-item"><h3>Fitness & Recreation</h3><p>Movement, recreation and experiences that make an elevated lifestyle active and enjoyable.</p></article>
+      <article class="life-item"><h3>Social Culture</h3><p>Connections, gatherings and shared moments that turn lifestyle into community.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="events">
+  <div class="container">
+    <div class="event-banner">
+      <div class="section-label">08 — LIVE EXPERIENCES</div>
+      <h3>Make the moment <span class="gold">matter.</span></h3>
+      <p>Concerts, showcases, private gatherings, cultural events and brand experiences created with detail, energy and intention.</p>
+      <a class="btn" href="https://wa.me/2347080373990">DISCUSS AN EVENT</a>
+    </div>
+  </div>
+</section>
+
+<section class="schole">
+  <div class="container schole-grid">
+    <div class="copy">
+      <div class="section-label">09 — SCHOLÉ</div>
+      <h2 class="section-title">Learn. Create.<br><span>Become.</span></h2>
+      <p>Scholé represents the house's commitment to learning, creativity, mentorship and the development of people who will shape the next chapter of African culture.</p>
+    </div>
+    <div class="schole-box">
+      <div class="card-number">THE NEXT GENERATION</div>
+      <h3>Knowledge is part of the luxury.</h3>
+      <p class="section-intro" style="margin:0">Ideas, skills and creative confidence create lasting value.</p>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="vision">
+  <div class="vision-content">
+    <div class="section-label">10 — VISION</div>
+    <h2>To build a world where <span class="gold">African creativity</span> is experienced as luxury.</h2>
+    <p>BLVCK NVTI∆N exists to create, connect and elevate — building a distinctive cultural house that can move from Lagos and Africa to the world.</p>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="container">
+    <div class="quote-mark">“</div>
+    <p>Royalty is not simply what you wear. It is the standard you choose to create.</p>
+    <small>BLVCK NVTI∆N</small>
+  </div>
+</section>
+
+<section class="leadership">
+  <div class="container leadership-grid">
+    <div class="copy">
+      <div class="section-label">11 — LEADERSHIP</div>
+      <h2 class="section-title">Vision with<br><span>direction.</span></h2>
+      <p>BLVCK NVTI∆N is guided by a commitment to creative excellence, African identity, collaboration and experiences that leave a meaningful impression.</p>
+      <p>We partner with artists, creators, brands, talents and cultural builders who share that ambition.</p>
+    </div>
+    <div class="leadership-card"><h3>BLVCK<br><span class="gold">NVTI∆N</span></h3></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div class="section-label">12 — CONTACT</div>
+      <h2>Let's create <span class="gold">reality.</span></h2>
+      <p>For collaborations, music, film, content creation, fashion, events, partnerships or general enquiries, connect with BLVCK NVTI∆N.</p>
+      <div class="contact-links">
+        <a class="btn" href="https://wa.me/2347080373990">WHATSAPP</a>
+        <a class="btn" href="tel:+2347080373990">0708 037 3990</a>
+        <a class="btn" href="mailto:blvcknvtion69@gmail.com">EMAIL US</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <img src="./file_000000007a448210b04cd83df34b0b4a%20(1).png" alt="BLVCK NVTI∆N">
+  <p>ENTERTAINMENT • LEISURE • LIFESTYLE • FASHION</p>
+  <div class="footer-contact">0708 037 3990 &nbsp; • &nbsp; blvcknvtion69@gmail.com</div>
+  <p style="margin-top:18px">© 2026 BLVCK NVTI∆N. WHERE ROYALTY REDEFINES REALITY.</p>
+</footer>
+
+</body>
+</html>
