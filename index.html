@@ -3,616 +3,1225 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BLVCK NVTI∆N — Where Royalty Redefines Reality.">
+
+<meta name="description"
+content="BLVCK NVTI∆N — Where Royalty Redefines Reality. Entertainment, Leisure, Lifestyle and Fashion.">
+
 <title>BLVCK NVTI∆N | Where Royalty Redefines Reality</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root{
-  --black:#050505;
-  --dark:#0b0b0b;
-  --gold:#c9a45c;
-  --light-gold:#e4c982;
-  --white:#f5f2eb;
-  --muted:#a9a39a;
-  --line:rgba(201,164,92,.28);
+    --black:#030303;
+    --black2:#080808;
+    --black3:#101010;
+    --gold:#d4af37;
+    --gold2:#f4d77a;
+    --gold3:#9d7b20;
+    --white:#f7f3e8;
+    --muted:#a9a39a;
+    --line:rgba(212,175,55,.22);
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-  background:var(--black);
-  color:var(--white);
-  font-family:'Montserrat',sans-serif;
-  line-height:1.7;
+    background:var(--black);
+    color:var(--white);
+    font-family:'Montserrat',sans-serif;
+    line-height:1.7;
 }
 
 a{
-  color:inherit;
-  text-decoration:none;
+    color:inherit;
+    text-decoration:none;
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ================= HEADER ================= */
+
 header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-  background:rgba(5,5,5,.94);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(3,3,3,.92);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--line);
 }
 
 .nav{
-  max-width:1250px;
-  margin:auto;
-  height:78px;
-  padding:0 28px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+    max-width:1250px;
+    height:82px;
+    margin:auto;
+    padding:0 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.logo{
-  color:var(--white);
-  font-family:'Cormorant Garamond',serif;
-  font-size:25px;
-  font-weight:700;
-  letter-spacing:4px;
+.brand{
+    font-family:'Cormorant Garamond',serif;
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:6px;
 }
 
-.logo span{
-  color:var(--gold);
+.brand span{
+    color:var(--gold);
 }
 
 .nav-links{
-  display:flex;
-  gap:30px;
-  list-style:none;
+    display:flex;
+    gap:34px;
+    list-style:none;
 }
 
 .nav-links a{
-  font-size:11px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  transition:.3s;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#d8d2c6;
+    transition:.3s;
 }
 
 .nav-links a:hover{
-  color:var(--gold);
+    color:var(--gold2);
 }
 
-.menu{
-  display:none;
-  color:var(--gold);
-  font-size:27px;
-  cursor:pointer;
+.menu-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:var(--gold);
+    font-size:30px;
+    cursor:pointer;
 }
+
+/* ================= HERO ================= */
 
 .hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-  padding:130px 25px 80px;
-  background:
-    radial-gradient(circle at center,rgba(201,164,92,.11),transparent 35%),
-    linear-gradient(180deg,#090909,#030303);
-}
-
-.hero:before,
-.hero:after{
-  content:"";
-  position:absolute;
-  border:1px solid rgba(201,164,92,.18);
-  border-radius:50%;
-  pointer-events:none;
+    min-height:100vh;
+    padding:120px 20px 70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at center,rgba(212,175,55,.08),transparent 35%),
+    var(--black);
 }
 
 .hero:before{
-  width:650px;
-  height:650px;
+    content:"";
+    position:absolute;
+    width:850px;
+    height:850px;
+    border:1px solid rgba(212,175,55,.12);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .hero:after{
-  width:900px;
-  height:900px;
+    content:"";
+    position:absolute;
+    width:1150px;
+    height:1150px;
+    border:1px solid rgba(212,175,55,.08);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .hero-content{
-  position:relative;
-  z-index:2;
-  max-width:950px;
+    position:relative;
+    z-index:2;
+    max-width:900px;
 }
 
-.crown{
-  color:var(--gold);
-  font-size:42px;
-  margin-bottom:12px;
-  letter-spacing:10px;
+.hero-logo{
+    width:min(720px,88vw);
+    margin:0 auto 35px;
+    filter:drop-shadow(0 0 28px rgba(212,175,55,.18));
+}
+
+.hero-kicker{
+    color:var(--gold2);
+    font-family:'Cormorant Garamond',serif;
+    font-size:27px;
+    font-style:italic;
+    margin-bottom:20px;
 }
 
 .hero h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(55px,10vw,125px);
-  line-height:.85;
-  letter-spacing:8px;
-  font-weight:600;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(42px,8vw,88px);
+    font-weight:500;
+    letter-spacing:7px;
+    line-height:1;
+    text-transform:uppercase;
 }
 
 .hero h1 span{
-  color:var(--gold);
+    color:var(--gold);
 }
 
-.tagline{
-  margin:30px 0 10px;
-  color:var(--light-gold);
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(21px,3vw,34px);
-  font-style:italic;
+.hero-description{
+    margin:28px auto 35px;
+    max-width:650px;
+    color:var(--muted);
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
-.categories{
-  color:var(--muted);
-  letter-spacing:3px;
-  font-size:10px;
-  text-transform:uppercase;
+.hero-categories{
+    color:#d8d2c6;
+    font-size:11px;
+    letter-spacing:5px;
+    margin-bottom:40px;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:35px;
-  padding:15px 30px;
-  border:1px solid var(--gold);
-  color:var(--gold);
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:11px;
-  transition:.3s;
+.hero-button{
+    display:inline-block;
+    padding:16px 38px;
+    border:1px solid var(--gold);
+    color:var(--gold2);
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    transition:.35s;
 }
 
-.btn:hover{
-  background:var(--gold);
-  color:#000;
+.hero-button:hover{
+    background:var(--gold);
+    color:#050505;
 }
+
+/* ================= GENERAL ================= */
 
 section{
-  padding:110px 25px;
+    padding:110px 24px;
 }
 
 .container{
-  max-width:1150px;
-  margin:auto;
+    max-width:1150px;
+    margin:auto;
 }
 
 .section-label{
-  color:var(--gold);
-  font-size:10px;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  margin-bottom:15px;
+    color:var(--gold);
+    font-size:10px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
 .section-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(42px,6vw,70px);
-  line-height:1;
-  margin-bottom:25px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(42px,6vw,70px);
+    font-weight:500;
+    line-height:1;
+    margin-bottom:25px;
 }
 
 .section-title span{
-  color:var(--gold);
+    color:var(--gold);
 }
 
-.intro{
-  max-width:750px;
-  color:var(--muted);
-  font-size:15px;
+.section-text{
+    max-width:700px;
+    color:var(--muted);
+    font-size:14px;
 }
+
+/* ================= ABOUT ================= */
 
 .about{
-  background:#080808;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
+    background:var(--black2);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
 }
 
 .about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  margin-top:60px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
 }
 
-.about-card{
-  padding:38px;
-  border:1px solid var(--line);
-  background:linear-gradient(145deg,#0d0d0d,#070707);
+.about-box{
+    border:1px solid var(--line);
+    padding:45px;
+    background:linear-gradient(145deg,#0c0c0c,#050505);
 }
 
-.about-card h3{
-  color:var(--gold);
-  font-family:'Cormorant Garamond',serif;
-  font-size:31px;
-  margin-bottom:15px;
+.about-box h3{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--gold2);
+    font-size:31px;
+    margin-bottom:15px;
 }
 
-.about-card p{
-  color:var(--muted);
-  font-size:14px;
+.about-box p{
+    color:var(--muted);
+    font-size:13px;
 }
+
+/* ================= WORLD ================= */
 
 .world{
-  background:#050505;
+    background:
+    radial-gradient(circle at 50% 0,rgba(212,175,55,.07),transparent 40%),
+    var(--black);
+}
+
+.world-heading{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 65px;
 }
 
 .world-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin-top:55px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
 }
 
 .world-card{
-  min-height:260px;
-  padding:35px 28px;
-  border:1px solid var(--line);
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  background:linear-gradient(160deg,#111,#060606);
-  transition:.4s;
+    min-height:270px;
+    padding:40px;
+    border:1px solid var(--line);
+    background:#080808;
+    position:relative;
+    overflow:hidden;
+    transition:.4s;
 }
 
 .world-card:hover{
-  transform:translateY(-8px);
-  border-color:var(--gold);
+    transform:translateY(-6px);
+    border-color:var(--gold);
 }
 
-.world-card small{
-  color:var(--gold);
-  letter-spacing:3px;
-  text-transform:uppercase;
-  font-size:9px;
+.world-number{
+    font-family:'Cormorant Garamond',serif;
+    color:rgba(212,175,55,.25);
+    font-size:70px;
+    position:absolute;
+    right:25px;
+    top:10px;
 }
 
 .world-card h3{
-  font-family:'Cormorant Garamond',serif;
-  font-size:34px;
-  margin:8px 0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    color:var(--gold2);
+    margin-bottom:15px;
+    position:relative;
 }
 
 .world-card p{
-  color:var(--muted);
-  font-size:12px;
+    color:var(--muted);
+    font-size:13px;
+    position:relative;
 }
 
-.statement{
-  text-align:center;
-  padding:130px 25px;
-  background:#090909;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
+/* ================= FEATURE ================= */
+
+.feature{
+    background:var(--black2);
 }
 
-.statement p{
-  max-width:900px;
-  margin:auto;
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(30px,5vw,58px);
-  line-height:1.15;
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:55px;
 }
 
-.statement span{
-  color:var(--gold);
+.feature-card{
+    padding:35px 28px;
+    border-top:1px solid var(--gold);
+    background:#070707;
 }
+
+.feature-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:29px;
+    color:var(--gold2);
+    margin-bottom:12px;
+}
+
+.feature-card p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* ================= VISION ================= */
+
+.vision{
+    text-align:center;
+    position:relative;
+    background:
+    linear-gradient(rgba(3,3,3,.9),rgba(3,3,3,.96)),
+    radial-gradient(circle,rgba(212,175,55,.15),transparent 45%);
+}
+
+.vision-inner{
+    max-width:850px;
+    margin:auto;
+}
+
+.vision-mark{
+    color:var(--gold);
+    font-size:45px;
+    margin-bottom:25px;
+}
+
+.vision h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(40px,7vw,75px);
+    font-weight:500;
+    line-height:1.05;
+}
+
+.vision p{
+    color:var(--muted);
+    margin-top:25px;
+    font-size:14px;
+}
+
+/* ================= LEADERSHIP ================= */
+
+.leadership{
+    background:var(--black2);
+}
+
+.leadership-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.leadership-card{
+    border:1px solid var(--line);
+    padding:45px;
+}
+
+.leadership-card h3{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--gold2);
+    font-size:35px;
+}
+
+.leadership-card p{
+    color:var(--muted);
+    margin-top:15px;
+    font-size:13px;
+}
+
+/* ================= QUOTE ================= */
+
+.quote{
+    padding:130px 24px;
+    text-align:center;
+    background:#050505;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.quote p{
+    max-width:900px;
+    margin:auto;
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:clamp(32px,5vw,58px);
+    color:#eee7d8;
+    line-height:1.15;
+}
+
+.quote span{
+    display:block;
+    margin-top:25px;
+    color:var(--gold);
+    font-family:'Montserrat',sans-serif;
+    font-style:normal;
+    font-size:10px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+/* ================= CONTACT ================= */
 
 .contact{
-  background:#050505;
+    background:
+    radial-gradient(circle at center,rgba(212,175,55,.08),transparent 45%),
+    var(--black);
 }
 
-.contact-box{
-  margin-top:50px;
-  border:1px solid var(--line);
-  padding:50px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
+.contact-inner{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
 }
 
-.contact-item{
-  padding-bottom:25px;
-  border-bottom:1px solid rgba(255,255,255,.08);
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin:50px 0 40px;
 }
 
-.contact-item small{
-  display:block;
-  color:var(--gold);
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:9px;
-  margin-bottom:8px;
+.contact-card{
+    padding:30px 20px;
+    border:1px solid var(--line);
+    background:#070707;
 }
 
-.contact-item a,
-.contact-item div{
-  font-size:16px;
+.contact-card strong{
+    display:block;
+    color:var(--gold2);
+    font-family:'Cormorant Garamond',serif;
+    font-size:25px;
+    margin-bottom:8px;
 }
+
+.contact-card span{
+    color:var(--muted);
+    font-size:12px;
+    word-break:break-word;
+}
+
+.whatsapp{
+    display:inline-block;
+    margin-top:15px;
+    padding:16px 35px;
+    border:1px solid var(--gold);
+    color:var(--gold2);
+    font-size:10px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    background:var(--gold);
+    color:#000;
+}
+
+/* ================= FOOTER ================= */
 
 footer{
-  padding:45px 25px;
-  text-align:center;
-  border-top:1px solid var(--line);
-  background:#020202;
+    padding:55px 25px;
+    text-align:center;
+    border-top:1px solid var(--line);
+    background:#020202;
 }
 
 .footer-logo{
-  font-family:'Cormorant Garamond',serif;
-  color:var(--gold);
-  font-size:27px;
-  letter-spacing:4px;
+    width:min(330px,75vw);
+    margin:0 auto 25px;
 }
 
-footer p{
-  color:#777;
-  font-size:10px;
-  letter-spacing:2px;
-  margin-top:10px;
+.footer-tagline{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    color:var(--gold2);
+    font-size:20px;
 }
+
+.footer-nav{
+    margin:25px 0;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.footer-nav a{
+    font-size:9px;
+    letter-spacing:2px;
+    color:var(--muted);
+    text-transform:uppercase;
+}
+
+.copyright{
+    color:#666;
+    font-size:9px;
+    letter-spacing:1px;
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:800px){
-  .nav-links{
-    position:absolute;
-    top:78px;
-    left:0;
-    width:100%;
-    background:#050505;
-    border-bottom:1px solid var(--line);
-    display:none;
-    flex-direction:column;
-    padding:25px;
-    gap:20px;
-  }
 
-  .nav-links.active{
-    display:flex;
-  }
+    .nav{
+        height:72px;
+        padding:0 20px;
+    }
 
-  .menu{
-    display:block;
-  }
+    .brand{
+        font-size:21px;
+        letter-spacing:4px;
+    }
 
-  .about-grid,
-  .contact-box{
-    grid-template-columns:1fr;
-  }
+    .menu-btn{
+        display:block;
+    }
 
-  .world-grid{
-    grid-template-columns:1fr;
-  }
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:72px;
+        left:0;
+        width:100%;
+        padding:25px;
+        background:#050505;
+        border-bottom:1px solid var(--line);
+        flex-direction:column;
+        gap:22px;
+        text-align:center;
+    }
 
-  .contact-box{
-    padding:30px;
-  }
+    .nav-links.active{
+        display:flex;
+    }
 
-  .hero h1{
-    letter-spacing:4px;
-  }
+    .hero{
+        padding-top:110px;
+        min-height:100svh;
+    }
+
+    .hero:before{
+        width:650px;
+        height:650px;
+    }
+
+    .hero:after{
+        width:850px;
+        height:850px;
+    }
+
+    .hero-logo{
+        width:94vw;
+        margin-bottom:28px;
+    }
+
+    .hero-kicker{
+        font-size:21px;
+    }
+
+    .hero-description{
+        font-size:10px;
+        letter-spacing:2px;
+    }
+
+    .hero-categories{
+        font-size:9px;
+        letter-spacing:3px;
+        line-height:2;
+    }
+
+    section{
+        padding:80px 20px;
+    }
+
+    .about-grid,
+    .leadership-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .about-box,
+    .leadership-card{
+        padding:30px;
+    }
+
+    .world-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quote{
+        padding:90px 20px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <nav class="nav">
-    <a href="#home" class="logo">BLVCK <span>NVTI∆N</span></a>
 
-    <div class="menu" onclick="toggleMenu()">☰</div>
+<nav class="nav">
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#world">Our World</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<a href="#home" class="brand">
+BLVCK <span>NVTI∆N</span>
+</a>
+
+<button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+☰
+</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#world">Our World</a></li>
+<li><a href="#vision">Vision</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
-<main>
+
+<!-- HERO -->
 
 <section class="hero" id="home">
-  <div class="hero-content">
-    <div class="crown">♛</div>
 
-    <h1>BLVCK <span>NVTI∆N</span></h1>
+<div class="hero-content">
 
-    <p class="tagline">Where Royalty Redefines Reality</p>
+<img
+class="hero-logo"
+src="./file_000000007a448210b04cd83df34b0b4a (1).png"
+alt="BLVCK NVTI∆N Crown Logo">
 
-    <p class="categories">
-      Entertainment &nbsp;•&nbsp; Leisure &nbsp;•&nbsp; Lifestyle &nbsp;•&nbsp; Fashion
-    </p>
+<div class="hero-kicker">
+Where Royalty Redefines Reality
+</div>
 
-    <a href="#about" class="btn">Discover Our World</a>
-  </div>
+<div class="hero-categories">
+ENTERTAINMENT • LEISURE • LIFESTYLE • FASHION
+</div>
+
+<a href="#world" class="hero-button">
+Discover Our World
+</a>
+
+</div>
+
 </section>
+
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
-  <div class="container">
-    <div class="section-label">The Brand</div>
-    <h2 class="section-title">A World Where <span>Royalty</span> Lives</h2>
 
-    <p class="intro">
-      BLVCK NVTI∆N is a premium lifestyle brand built around creativity,
-      expression, culture and refined experiences. We create a world where
-      entertainment, leisure, lifestyle and fashion meet.
-    </p>
+<div class="container">
 
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Our Vision</h3>
-        <p>
-          To establish BLVCK NVTI∆N as a distinguished lifestyle platform
-          that inspires people to experience life boldly, creatively and
-          authentically.
-        </p>
-      </div>
+<div class="about-grid">
 
-      <div class="about-card">
-        <h3>Our Mission</h3>
-        <p>
-          To create exceptional experiences, products and creative platforms
-          that connect culture, fashion, entertainment and modern luxury.
-        </p>
-      </div>
-    </div>
-  </div>
+<div>
+
+<div class="section-label">
+The House
+</div>
+
+<h2 class="section-title">
+Welcome to <span>BLVCK NVTI∆N</span>
+</h2>
+
+<p class="section-text">
+BLVCK NVTI∆N is a premium lifestyle brand created around
+creativity, culture, expression and modern royalty.
+We bring together entertainment, leisure, lifestyle and fashion
+under one distinctive identity.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Royalty Is A Lifestyle.</h3>
+
+<p>
+We believe royalty is not simply a title. It is a mindset,
+a standard, an identity and a way of experiencing the world.
+BLVCK NVTI∆N represents ambition, elegance, confidence and
+creative excellence.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- OUR WORLD -->
 
 <section class="world" id="world">
-  <div class="container">
-    <div class="section-label">Explore</div>
-    <h2 class="section-title">Our <span>World</span></h2>
 
-    <p class="intro">
-      Four expressions. One identity. A lifestyle defined by individuality,
-      creativity and excellence.
-    </p>
+<div class="container">
 
-    <div class="world-grid">
+<div class="world-heading">
 
-      <div class="world-card">
-        <small>01 / Entertainment</small>
-        <h3>Music</h3>
-        <p>Sound, artists, culture and unforgettable moments.</p>
-      </div>
+<div class="section-label">
+Our World
+</div>
 
-      <div class="world-card">
-        <small>02 / Entertainment</small>
-        <h3>Events & Concerts</h3>
-        <p>Experiences designed to bring people together.</p>
-      </div>
+<h2 class="section-title">
+Four Worlds. <span>One Kingdom.</span>
+</h2>
 
-      <div class="world-card">
-        <small>03 / Entertainment</small>
-        <h3>Film & Media</h3>
-        <p>Creative stories, visual culture and modern media.</p>
-      </div>
+<p class="section-text" style="margin:auto;">
+Explore the different expressions of BLVCK NVTI∆N.
+From entertainment and experiences to lifestyle and fashion,
+every world carries the same royal identity.
+</p>
 
-      <div class="world-card">
-        <small>04 / Leisure</small>
-        <h3>Comfort</h3>
-        <p>A refined environment for relaxation and enjoyment.</p>
-      </div>
+</div>
 
-      <div class="world-card">
-        <small>05 / Lifestyle</small>
-        <h3>Beauty & Wellness</h3>
-        <p>Personal care, confidence and elevated living.</p>
-      </div>
 
-      <div class="world-card">
-        <small>06 / Lifestyle</small>
-        <h3>Fitness & Recreation</h3>
-        <p>Movement, energy and experiences beyond the ordinary.</p>
-      </div>
+<div class="world-grid">
 
-      <div class="world-card">
-        <small>07 / Fashion</small>
-        <h3>Branded Clothing</h3>
-        <p>Distinctive pieces created to express identity.</p>
-      </div>
+<div class="world-card">
 
-      <div class="world-card">
-        <small>08 / Fashion</small>
-        <h3>Accessories</h3>
-        <p>Details that complete the BLVCK NVTI∆N expression.</p>
-      </div>
+<div class="world-number">01</div>
 
-      <div class="world-card">
-        <small>09 / Fashion</small>
-        <h3>Modeling</h3>
-        <p>Presence, confidence and visual storytelling.</p>
-      </div>
+<h3>Entertainment</h3>
 
-    </div>
-  </div>
+<p>
+Music, events, concerts, film and media.
+A platform for creativity, culture and unforgettable experiences.
+</p>
+
+</div>
+
+
+<div class="world-card">
+
+<div class="world-number">02</div>
+
+<h3>Leisure</h3>
+
+<p>
+Comfort, beauty, wellness, fitness and recreation designed
+around elevated living.
+</p>
+
+</div>
+
+
+<div class="world-card">
+
+<div class="world-number">03</div>
+
+<h3>Lifestyle</h3>
+
+<p>
+A modern expression of identity, culture and refined everyday living.
+</p>
+
+</div>
+
+
+<div class="world-card">
+
+<div class="world-number">04</div>
+
+<h3>Fashion</h3>
+
+<p>
+Branded clothing, accessories and modelling inspired by
+confidence, individuality and royalty.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="statement">
-  <p>
-    “We don't simply follow reality.
-    <span>We redefine it.</span>”
-  </p>
+
+<!-- ENTERTAINMENT -->
+
+<section class="feature">
+
+<div class="container">
+
+<div class="section-label">
+01 — Entertainment
+</div>
+
+<h2 class="section-title">
+Where <span>Culture</span> Comes Alive.
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>Music</h3>
+<p>
+Sound, artists and creative expression built to create memorable moments.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Events & Concerts</h3>
+<p>
+Premium experiences that bring people together through entertainment and culture.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Film & Media</h3>
+<p>
+Visual storytelling, media projects and creative productions.
+</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- LEISURE -->
+
+<section class="world">
+
+<div class="container">
+
+<div class="section-label">
+02 — Leisure
+</div>
+
+<h2 class="section-title">
+Experience <span>Elevated Living.</span>
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>A Home of Comfort</h3>
+<p>
+Spaces and experiences inspired by comfort, elegance and relaxation.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Beauty & Wellness</h3>
+<p>
+Beauty, self-care and wellness experiences created around confidence.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Fitness & Recreation</h3>
+<p>
+Movement, recreation and experiences that encourage an elevated lifestyle.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FASHION -->
+
+<section class="feature">
+
+<div class="container">
+
+<div class="section-label">
+04 — Fashion
+</div>
+
+<h2 class="section-title">
+Wear Your <span>Royalty.</span>
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>Branded Clothing</h3>
+<p>
+Distinctive BLVCK NVTI∆N pieces designed around identity and expression.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Accessories</h3>
+<p>
+Finishing pieces that complete the BLVCK NVTI∆N aesthetic.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Modeling</h3>
+<p>
+A platform for confidence, visual expression and fashion culture.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VISION -->
+
+<section class="vision" id="vision">
+
+<div class="vision-inner">
+
+<div class="vision-mark">✦</div>
+
+<div class="section-label">
+Our Vision
+</div>
+
+<h2>
+To Build A World Where
+<span>Royalty Redefines Reality.</span>
+</h2>
+
+<p>
+BLVCK NVTI∆N seeks to create a recognizable African-rooted
+luxury lifestyle identity that connects creativity, culture,
+fashion, entertainment and modern experiences.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- LEADERSHIP -->
+
+<section class="leadership" id="leadership">
+
+<div class="container">
+
+<div class="leadership-grid">
+
+<div>
+
+<div class="section-label">
+Leadership
+</div>
+
+<h2 class="section-title">
+Built With <span>Purpose.</span>
+</h2>
+
+<p class="section-text">
+BLVCK NVTI∆N is driven by a vision to create meaningful
+experiences and build a brand that represents confidence,
+creativity, ambition and excellence.
+</p>
+
+</div>
+
+<div class="leadership-card">
+
+<h3>The Royal Standard</h3>
+
+<p>
+Every BLVCK NVTI∆N experience should communicate quality,
+identity and distinction.
+</p>
+
+<p>
+We are not simply creating products or experiences.
+We are building a world.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section class="quote">
+
+<p>
+“Where Royalty Redefines Reality.”
+</p>
+
+<span>
+BLVCK NVTI∆N
+</span>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-  <div class="container">
-    <div class="section-label">Connect</div>
-    <h2 class="section-title">Enter The <span>World</span></h2>
 
-    <p class="intro">
-      For collaborations, enquiries, partnerships and opportunities,
-      connect directly with BLVCK NVTI∆N.
-    </p>
+<div class="contact-inner">
 
-    <div class="contact-box">
+<div class="section-label">
+Connect With Us
+</div>
 
-      <div class="contact-item">
-        <small>Phone</small>
-        <a href="tel:+2347080373990">0708 037 3990</a>
-      </div>
+<h2 class="section-title">
+Enter The <span>Kingdom.</span>
+</h2>
 
-      <div class="contact-item">
-        <small>WhatsApp</small>
-        <a href="https://wa.me/2347080373990" target="_blank">
-          Chat With Us on WhatsApp
-        </a>
-      </div>
+<p class="section-text" style="margin:auto;">
+For partnerships, enquiries, collaborations and business opportunities,
+connect with BLVCK NVTI∆N.
+</p>
 
-      <div class="contact-item">
-        <small>Email</small>
-        <a href="mailto:blvcknvtion69@gmail.com">
-          blvcknvtion69@gmail.com
-        </a>
-      </div>
 
-      <div class="contact-item">
-        <small>Brand</small>
-        <div>BLVCK NVTI∆N</div>
-      </div>
+<div class="contact-grid">
 
-    </div>
-  </div>
+<a class="contact-card"
+href="tel:+2347080373990">
+
+<strong>Phone</strong>
+
+<span>
+0708 037 3990
+</span>
+
+</a>
+
+
+<a class="contact-card"
+href="https://wa.me/2347080373990">
+
+<strong>WhatsApp</strong>
+
+<span>
+Chat With Us
+</span>
+
+</a>
+
+
+<a class="contact-card"
+href="mailto:blvcknvtion69@gmail.com">
+
+<strong>Email</strong>
+
+<span>
+blvcknvtion69@gmail.com
+</span>
+
+</a>
+
+</div>
+
+
+<a
+class="whatsapp"
+href="https://wa.me/2347080373990"
+target="_blank">
+
+Chat With Us On WhatsApp
+
+</a>
+
+</div>
+
 </section>
 
-</main>
+
+<!-- FOOTER -->
 
 <footer>
-  <div class="footer-logo">BLVCK NVTI∆N</div>
-  <p>WHERE ROYALTY REDEFINES REALITY</p>
-  <p>© 2026 BLVCK NVTI∆N. ALL RIGHTS RESERVED.</p>
+
+<img
+class="footer-logo"
+src="./file_000000007a448210b04cd83df34b0b4a (1).png"
+alt="BLVCK NVTI∆N">
+
+<div class="footer-tagline">
+Where Royalty Redefines Reality
+</div>
+
+<div class="footer-nav">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#world">Our World</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="copyright">
+© 2026 BLVCK NVTI∆N. All Rights Reserved.
+</div>
+
 </footer>
 
+
 <script>
+
 function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
+
+const menu = document.getElementById("navLinks");
+
+menu.classList.toggle("active");
+
 }
 
 document.querySelectorAll(".nav-links a").forEach(function(link){
-  link.addEventListener("click",function(){
-    document.getElementById("navLinks").classList.remove("active");
-  });
+
+link.addEventListener("click",function(){
+
+document.getElementById("navLinks").classList.remove("active");
+
 });
+
+});
+
 </script>
 
 </body>
-    </html>
+  </html>
